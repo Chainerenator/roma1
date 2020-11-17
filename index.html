@@ -1,22 +1,38 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>ROMATY CAM</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		
-	</head>
-	
-	<body>
-		<div class="container">
-  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Iframe</h2>
+<h3>Maintain Aspect Ratio 16:9</h3>
+
+
+<div class="container"> 
+  <iframe class="responsive-iframe" id='fp_embed_player' src='https://demo.flashphoner.com:8888/embed_player?urlServer=wss://demo.flashphoner.com:8443&streamName=rtsp://admin:Flamingo7@193.111.0.164:6000/cam/realmonitor?channel=1%26subtype=0&mediaProviders=WebRTC,Flash,MSE,WSPlayer' marginwidth='0' marginheight='0' frameborder='0' width='100%' height='100%' scrolling='no' allowfullscreen='allowfullscreen'></iframe>
+
+ 
 </div>
-<iframe id='fp_embed_player' class="responsive-iframe" src='https://demo.flashphoner.com:8888/embed_player?urlServer=wss://demo.flashphoner.com:8443&streamName=rtsp://admin:Flamingo7@193.111.0.164:6000/cam/realmonitor?channel=1%26subtype=0&mediaProviders=WebRTC,Flash,MSE,WSPlayer' marginwidth='0' marginheight='0' frameborder='0' width='100%' height='100%' scrolling='no' allowfullscreen='allowfullscreen'></iframe>		
-	</body>
+
+</body>
 </html>
